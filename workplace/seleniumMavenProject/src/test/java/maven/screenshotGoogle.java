@@ -1,0 +1,16 @@
+package maven;
+
+import org.openqa.selenium.WebDriver;
+
+public class screenshotGoogle {
+
+	public static void main(String[] args) {
+		//SeleniumUtility s1=new SeleniumUtility();
+	//	WebDriver driver=s1.setUp("chrome","https://www.google.com");
+		//String fileName=".\\Googlepage"+date+".png";
+		//s1.takeScreenshot(fileName);
+		//s1.cleanUp();
+
+	}
+
+}

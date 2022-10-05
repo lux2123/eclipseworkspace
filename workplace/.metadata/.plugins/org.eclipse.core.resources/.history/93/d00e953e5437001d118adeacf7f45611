@@ -1,0 +1,29 @@
+package Calender;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class getloacationactitime {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver",".\\Executables\\chromedriver.exe");
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+		driver.get("https://demo.actitime.com/login.do");
+		
+		driver.findElement(By.id("loginButton"));
+		
+		WebElement errorMsg=driver.findElement(By.cssSelector(".messageIcon"));
+		
+		System.out.println("Error msg:"+errorMsg.getText());
+		System.out.println("Error msg text color:"+errorMsg.getCssValue("color"));
+		
+
+	}
+
+}

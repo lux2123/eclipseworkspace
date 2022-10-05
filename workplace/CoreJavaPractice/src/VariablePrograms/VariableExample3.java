@@ -1,0 +1,21 @@
+package VariablePrograms;
+
+public class VariableExample3 {
+	static int num1, num2=25, res;
+	public static void main(String[] args) {
+		System.out.println("programs starts");
+		System.out.println("number 1 is :" +num1);
+		System.out.println("number 2 is :" +num2);
+		 res= num1+num2;
+		System.out.println("res is: " +res);
+		
+		num1=40;
+		System.out.println("updated number1 is: " +num1);
+		System.out.println("updated number2 is: " +num2);
+		res=num1+num2;
+		System.out.println("updated res: " +res);
+		System.out.println("program end");
+
+	}
+
+}

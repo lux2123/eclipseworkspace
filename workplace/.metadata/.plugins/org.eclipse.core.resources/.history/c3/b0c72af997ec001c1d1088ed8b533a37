@@ -1,0 +1,22 @@
+package MethodPrograms;
+
+public class MethodExample2 {
+	
+	public static double getROI(int p, int t, float r) {
+	double roi=(p*r*t)/100;
+	System.out.println("principle is:"+p);
+	System.out.println("roi is:"+r);
+	System.out.println("time is:"+t);
+	System.out.println("interest paid by:"+roi);
+	return roi;
+		
+	}
+	
+
+	public static void main(String[] args) {
+		getROI(45000,3,4.5f);
+		// TODO Auto-generated method stub
+
+	}
+
+}

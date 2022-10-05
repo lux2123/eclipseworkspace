@@ -1,0 +1,21 @@
+package VariablePrograms;
+
+public class VariableExample1 {
+	static int age;
+	static boolean res;
+	static char grade;
+	static float roi;
+
+	public static void main(String[] args) {
+		System.out.println("programs starts");
+		System.out.println("default value of int " +age);
+		System.out.println("default value of boolean " +res);
+		System.out.println("default value of char " +grade);
+		System.out.println("default value of float " +roi);
+		System.out.println("programs end");
+		
+
+
+	}
+
+}

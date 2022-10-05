@@ -1,0 +1,29 @@
+package WindowHandling;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import Utilities.SeleniumUtility;
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class geeksforgeeks extends SeleniumUtility {
+
+	public static void main(String[] args) {
+		WebDriverManager.chromedriver().setup();
+		WebDriver driver=new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get("https://practice.geeksforgeeks.org/courses");
+		
+		String HomeId=driver.getWindowHandle();
+		driver.findElement(By.)
+		
+		
+		
+		
+
+	}
+
+}
